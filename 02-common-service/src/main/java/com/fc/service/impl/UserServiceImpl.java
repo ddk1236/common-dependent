@@ -7,11 +7,18 @@ import com.fc.service.UserService;
 import org.springframework.stereotype.Service;
 
 /**
- * @author ddk
- * @date 2021/8/17
+ * <p>
+ *  服务实现类
+ * </p>
+ *
+ * @author jobob
+ * @since 2021-08-01
  */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> implements UserService {
+
+
+
 
 
 }
