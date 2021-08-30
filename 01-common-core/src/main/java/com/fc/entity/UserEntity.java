@@ -2,6 +2,7 @@ package com.fc.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -82,7 +83,8 @@ public class UserEntity implements Serializable {
      * 是否删除（0正常,1删除）
      */
     @ApiModelProperty("是否删除（0正常,1删除）")
-    private Boolean deleted;
+    @TableLogic
+    private int deleted;
 
     private static final long serialVersionUID = 1L;
 
